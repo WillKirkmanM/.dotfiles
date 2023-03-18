@@ -3,6 +3,8 @@
 ## Scripts
 Give execution permission to scripts
 
+**Make sure to `cd scripts` in order to run the scripts provided**
+
 ```
 chmod +x -R scripts 
 ```
