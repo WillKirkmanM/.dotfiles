@@ -25,3 +25,20 @@ Install Neovim
 ```
 ./install_neovim
 ```
+
+## Natural Scrolling (Touchpad)
+Edit xorg libinput config
+```
+sudo nvim /usr/share/X11/xorg.conf.d/40-libinput.conf
+```
+
+Add This:
+`
+Section "InputClass"
+        Identifier "libinput touchpad catchall"
+        MatchIsTouchpad "on"
+        MatchDevicePath "/dev/input/event*"
+        Driver "libinput"
+	Option "NaturalScrolling" "True"
+EndSection
+`
