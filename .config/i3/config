@@ -44,7 +44,7 @@ exec --no-startup-id picom
 exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
 
 # Autotiling
-exec --no-startupid autotiling
+exec --no-startup-id autotiling
 
 # Use pactl to adjust volume in PulseAudio. (Need pulseaudio-ctl)
 set $refresh_i3status killall -SIGUSR1 i3status
