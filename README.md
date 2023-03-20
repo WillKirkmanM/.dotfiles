@@ -33,7 +33,7 @@ sudo nvim /usr/share/X11/xorg.conf.d/40-libinput.conf
 ```
 
 Add This:
-`
+```
 Section "InputClass"
         Identifier "libinput touchpad catchall"
         MatchIsTouchpad "on"
@@ -41,4 +41,4 @@ Section "InputClass"
         Driver "libinput"
 	Option "NaturalScrolling" "True"
 EndSection
-`
+```
