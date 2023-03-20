@@ -214,4 +214,4 @@ gaps inner 4
 gaps outer 5
 
 # Remove Window Titles
-default_border pixel 0
+for_window [class=".*"] border pixel 0
