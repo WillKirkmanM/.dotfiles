@@ -212,3 +212,6 @@ bar {
 # i3 Gaps
 gaps inner 4
 gaps outer 5
+
+# Remove Window Titles
+default_border pixel 0
