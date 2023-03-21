@@ -62,6 +62,12 @@ bindsym XF86AudioMute exec pamixer -t
 bindsym XF86MonBrightnessUp exec sudo light -A 5
 bindsym XF86MonBrightnessDown exec sudo light -U 5
 
+# Screenshots
+bindsym $mod+Shift+s exec gnome-screenshot --interactive --window
+
+# Emoji Picker
+bindsym $mod+Shift+. exec "rofi -modi emoji -show emoji"
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
