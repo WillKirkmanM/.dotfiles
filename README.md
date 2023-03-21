@@ -42,3 +42,6 @@ Section "InputClass"
 	Option "NaturalScrolling" "True"
 EndSection
 ```
+
+## Default Apps
+Make sure to change default apps in KDE Settings
