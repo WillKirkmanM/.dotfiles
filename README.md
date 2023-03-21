@@ -45,3 +45,8 @@ EndSection
 
 ## Default Apps
 Make sure to change default apps in KDE Settings
+
+## Node Version Manager (NVM)
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+```
