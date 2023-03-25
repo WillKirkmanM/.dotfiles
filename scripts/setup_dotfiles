@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 
 # Run Scripts
-# ./install_and_configure_yay
-# ./install_yay_packages
-# ./install_neovim
+./install_and_configure_yay
+./install_yay_packages
+./install_neovim
 
 # Move Configs into Right Places
 sudo cp -a ../.zshrc ~
 sudo cp -a ../.config/. ~/.config
 sudo cp -a ../.local/. ~/.local
 sudo cp -a ../share/. /usr/share/
+
+# Install Node Version Manager
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
