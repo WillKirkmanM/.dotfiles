@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# Run Scripts
+# ./install_and_configure_yay
+# ./install_yay_packages
+# ./install_neovim
+
+# Move Configs into Right Places
+sudo cp -a ../.zshrc ~
+sudo cp -a ../.config/. ~/.config
+sudo cp -a ../.local/. ~/.local
+sudo cp -a ../share/. /usr/share/
