@@ -20,14 +20,8 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.cmake" },
 
-  -- Motion
-  { import = "astrocommunity.motion.leap-nvim" },
-
   -- Debugging
   { import = "astrocommunity.debugging.nvim-bqf" },
-
-  -- Markdown and Latex
-  { import = "astrocommunity.markdown-and-latex.glow-nvim" },
 
   -- Code Runner
   { import = "astrocommunity.code-runner.overseer-nvim" },
