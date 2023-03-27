@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+# Thanks https://computingforgeeks.com/install-kvm-qemu-virt-manager-arch-manjar/
+#
+#
+function setup_kvm() {
+	sudo usermod -a -G libvirt $(whoami)
+	newgrp libvirt
+	sudo systemctl restart libvirtd.service
+
+	### Intel
+	# sudo modprobe -r kvm_intel
+	# sudo modprobe kvm_intel nested=1
+	# echo "options kvm-intel nested=1" | sudo tee /etc/modprobe.d/kvm-intel.conf
+
+	### AMD
+	#sudo modprobe -r kvm_amd
+	#sudo modprobe kvm_amd nested=1
+	# echo "options kvm-amd nested=1" | sudo tee /etc/modprobe.d/kvm-intel.conf
+
+	sudo modprobe -r kvm_amd
+	sudo modprobe kvm_amd nested=1
+	echo "options kvm_amd nested=1" | sudo tee /etc/modprobe.d/kvm-intel.conf
+
+	echo "Done! Opening Virtual Machine Manager."
+	virt-manager
+}
+
+yay
+yay -S archlinux-keyring
+yay -S qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat
+yay -S ebtables iptables
+yay -S libguestfs
+
+sudo systemctl enable libvirtd.service
+sudo systemctl start libvirtd.service
+
+echo "Now edit /etc/libvirt/libvirtd.conf"
+echo "Note: Change single quotes to double quotes"
+echo ""
+echo "On line ~85, change it to unix_sock_group = 'libvirt'"
+echo "On line ~102, change it unix_sock_rw_perms = '0770'"
+
+echo ""
+read -p "Continue?" yn
+
+case $yn in
+*)
+	setup_kvm
+	;;
+esac
