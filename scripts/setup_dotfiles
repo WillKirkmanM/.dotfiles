@@ -6,6 +6,7 @@
 
 # Move Configs into Right Places
 sudo cp -a ../.zshrc ~
+sudo cp -a ../.gitconfig ~
 sudo cp -a ../.config/. ~/.config
 sudo cp -a ../.local/. ~/.local
 sudo cp -a ../share/. /usr/share/

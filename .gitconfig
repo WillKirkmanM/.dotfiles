@@ -1,0 +1,12 @@
+[user]
+	email = willkirkmanmoller@gmail.com
+	name = WillKirkmanM
+	signingkey = 5B36EBC82A5C7773
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[commit]
+	gpgsign = true
