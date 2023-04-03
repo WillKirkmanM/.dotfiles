@@ -41,3 +41,19 @@ EndSection
 ## Default Apps
 
 Make sure to change default apps in KDE Settings
+
+## Errors
+
+Some fixes I found for different errors:
+
+_Command Ran_
+`$ ls .`
+
+_Error Found_
+`ls: cannot open directory 'repositories/': Permission denied`
+
+_Fix_
+
+```
+$ chmod 700 .
+```
