@@ -26,6 +26,9 @@ return {
   -- Code Runner
   { import = "astrocommunity.code-runner.overseer-nvim" },
 
+  -- Markdown and Latex
+  { import = "astrocommunity.markdown-and-latex.glow-nvim" },
+
   -- Editing Support
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.dial-nvim" },
