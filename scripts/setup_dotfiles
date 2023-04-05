@@ -15,6 +15,9 @@ sudo cp -a ../.gnupg/ ~/.config
 # Lockscreen
 betterlockscreen -u ~/Pictures/lockscreen.jpg
 
+# Auto CPU Frequency
+systemctl enable --now auto-cpufreq.service
+
 # Install Node Version Manager
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 
