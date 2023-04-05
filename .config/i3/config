@@ -71,6 +71,12 @@ bindsym XF86AudioMute exec --no-startup-id ~/.local/bin/volume_brightness.sh vol
 bindsym XF86MonBrightnessUp exec --no-startup-id ~/.local/bin/volume_brightness.sh brightness_up
 bindsym XF86MonBrightnessDown exec --no-startup-id ~/.local/bin/volume_brightness.sh brightness_down
 
+# Media player controls
+bindsym XF86AudioPlay exec --no-startup-id playerctl --all-players play-pause
+bindsym XF86AudioPause exec --no-startup-id playerctl --all-players play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+
 # Screenshots
 bindsym $mod+Shift+s exec gnome-screenshot --interactive --window
 
