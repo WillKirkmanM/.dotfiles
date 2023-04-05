@@ -7,6 +7,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # Default Editor
 export VISUAL="nvim"
 
+# Global Path
+export PATH=$PATH:~/.local/bin/
+
 # GPG Key Signing
 export GPG_TTY=$(tty)
 
