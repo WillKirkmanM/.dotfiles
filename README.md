@@ -57,3 +57,27 @@ _Fix_
 ```
 $ chmod 700 .
 ```
+
+## Lenovo Convervation Mode
+
+(Thanks: https://github.com/cszach/linux-on-lenovo-legion#battery-conservation-mode)
+
+```
+$ echo 1 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004*/conservation_mode
+```
+
+## Current GPU
+
+```
+$ glxinfo | egrep "OpenGL vendor|OpenGL renderer"
+```
+
+## Steam
+
+Taken From https://github.com/cszach/linux-on-lenovo-legion#steam
+
+The technique also applies to Steam games. In your Library, edit the Properties of the game that you wish to run on your graphics card. Under launch options, edit the launch command, and use %command% as the placeholder for the actual game command. For example, here is my launch command for Quake II RTX (NVIDIA dGPU):
+
+```
+__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia %command%
+```
