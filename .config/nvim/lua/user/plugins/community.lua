@@ -1,3 +1,4 @@
+
 return {
   -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
@@ -25,12 +26,18 @@ return {
 
   -- Code Runner
   { import = "astrocommunity.code-runner.overseer-nvim" },
+  { import = "astrocommunity.code-runner.sniprun" },
 
   -- Markdown and Latex
-  { import = "astrocommunity.markdown-and-latex.glow-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
 
   -- Editing Support
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.dial-nvim" },
+
+  -- Git
+  { import = "astrocommunity.git.git-blame-nvim" },
+
   -- { import = "astrocommunity.editing-support.nvim-ts-rainbow" },
 }
+
