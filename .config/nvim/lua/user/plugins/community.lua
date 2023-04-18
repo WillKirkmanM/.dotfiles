@@ -35,9 +35,6 @@ return {
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.dial-nvim" },
 
-  -- Git
-  { import = "astrocommunity.git.git-blame-nvim" },
-
   -- { import = "astrocommunity.editing-support.nvim-ts-rainbow" },
 }
 
