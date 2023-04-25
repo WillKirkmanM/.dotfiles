@@ -81,3 +81,6 @@ The technique also applies to Steam games. In your Library, edit the Properties 
 ```
 __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia %command%
 ```
+
+## Tmux
+Note! Run the command Ctrl + b  +  I (capital) to install the tmux packages
