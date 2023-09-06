@@ -54,6 +54,11 @@ _Error Found_
 
 _Fix_
 
+Go into Home Directory
+```
+$ cd ~
+```
+Allow only users in your group to modify files.
 ```
 $ chmod 700 .
 ```
